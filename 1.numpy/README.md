@@ -1,10 +1,10 @@
 #numpy函数库基础
-* numpy函数库的安装和测试
+* numpy函数库的安装和测试<br>
 		遇到问题：命令提示符显示pip版本过低   
     ![](1.numpy/图1.png)
 		升级pip时尝试输入以下命令，均未成功
     ![](1.numpy/图2.png)
-* 调用mat()函数
+* 调用mat()函数<br>
 		1、调用mat()函数将数组转为矩阵  
 ```Python
 >>> randMat=mat(random.rand(4,4))
