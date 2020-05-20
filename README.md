@@ -1,4 +1,4 @@
-#numpy函数库基础
+### numpy函数库基础
 * numpy函数库的安装和测试
 		遇到问题：命令提示符显示pip版本过低   
 		！[](https://github.com/Bonnie0126/machine-learning/raw/master/1.numpy/图1.png)
