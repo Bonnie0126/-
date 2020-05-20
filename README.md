@@ -3,6 +3,9 @@
 		遇到问题：命令提示符显示pip版本过低(见图1)   
     ![](1.numpy/图1.png)
 		升级pip时尝试输入以下命令，均未成功(见图2)
+    python - m pip install --upgrade pip
+    python -m pip install -U pip
+    easy_install --upgrade pip
     ![](1.numpy/图2.png)
 * 调用mat()函数<br>
 		1、调用mat()函数将数组转为矩阵  
