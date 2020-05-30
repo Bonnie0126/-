@@ -1,5 +1,5 @@
-## 
-
+### 构造第一个分类器
+```python
 Python 3.8.3 (tags/v3.8.3:6f8c832, May 13 2020, 22:20:19) [MSC v.1925 32 bit (Intel)] on win32
 Type "help", "copyright", "credits" or "license" for more information.
 >>> import kNN
@@ -11,4 +11,7 @@ array([[1. , 1.1],
        [0. , 0.1]])
 >>> labels
 ['A', 'A', 'B', 'B']
+>>> kNN.classify([0,0],group,labels,3)
+'B'
 >>>
+```
