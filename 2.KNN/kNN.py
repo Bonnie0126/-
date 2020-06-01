@@ -23,3 +23,20 @@ def createDataSet():
 	group = array([[1.0,1.1],[1.0,1.1],[0,0],[0,0.1]])
 	labels = ['A','A','B','B']
 	return group, labels
+
+#定义一个将文本转化为numpy的函数
+def file2matrix(filename):
+    fr=open(filename) #读取文件
+    arraylines=fr.readlines() #获取样本个数
+    numberOfLines=len(arraylines) #得到行数
+    returnMat=zeros((numberOfLines,3)) #构造全为0的零矩阵
+    classLabelVector= [] #初始化标签数组
+    index=0 #样本的索引
+    #解析文件
+    for line in arraylines:
+        line=line.strip() #删除空白符（包括'\n', '\r',  '\t',  ' ')
+        listFromLine=line.split('\t') #按照('\t')进行拆分
+        returnMat[index,:]=listFromLine[0:3] #得到特征变量
+        classLabelVector.append(int(listFromLine[-1])) #得到目标分类变量
+        index+=1
+    return returnMat,classLabelVector
